@@ -14,7 +14,6 @@ public class NodeBehaviour : MonoBehaviour
 
     private Color baseColor = Color.white;
 
-    // сила свечения
     private float glowIntensity = 0.5f;
     private float highlightIntensity = 2.0f;
 
@@ -22,7 +21,6 @@ public class NodeBehaviour : MonoBehaviour
     {
         rend = GetComponent<Renderer>();
 
-        // создаём копию материала (чтобы не менять prefab глобально)
         materialInstance = rend.material;
     }
 
