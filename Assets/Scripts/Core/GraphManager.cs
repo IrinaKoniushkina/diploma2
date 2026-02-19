@@ -158,7 +158,7 @@ public class GraphManager : MonoBehaviour
     Vector3 GetPointOnSphere(int index, int total)
     {
         float offset = 2f / total;
-        float increment = Mathf.PI * (3f - Mathf.Sqrt(5f)); // золотой угол
+        float increment = Mathf.PI * (3f - Mathf.Sqrt(5f));
 
         float y = ((index * offset) - 1) + (offset / 2);
         float r = Mathf.Sqrt(1 - y * y);
