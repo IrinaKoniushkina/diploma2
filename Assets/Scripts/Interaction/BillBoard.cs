@@ -13,10 +13,7 @@ public class Billboard : MonoBehaviour
     {
         if (cameraTransform == null) return;
 
-        // Поворачиваем к камере
         transform.LookAt(cameraTransform);
-
-        // Разворачиваем текст, чтобы он не был зеркальным
         transform.Rotate(0, 180f, 0);
     }
 }
